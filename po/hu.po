@@ -1,0 +1,187 @@
+# Hungarian translation for d-feet.
+# Copyright (C) 2013, 2014, 2019, 2020 The Free Software Foundation, inc.
+# This file is distributed under the same license as the d-feet package.
+#
+# Balázs Úr <ur.balazs at fsf dot hu>, 2013, 2014, 2019, 2020.
+msgid ""
+msgstr ""
+"Project-Id-Version: d-feet master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/d-feet/issues\n"
+"POT-Creation-Date: 2020-06-05 07:11+0000\n"
+"PO-Revision-Date: 2020-09-12 14:35+0200\n"
+"Last-Translator: Balázs Úr <ur.balazs at fsf dot hu>\n"
+"Language-Team: Hungarian <gnome-hu-list at gnome dot org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 19.12.3\n"
+
+#: data/org.gnome.dfeet.appdata.xml.in:7 data/org.gnome.dfeet.desktop.in.in:3
+#: src/dfeet/application.py:90
+msgid "D-Feet"
+msgstr "D-Feet"
+
+#: data/org.gnome.dfeet.appdata.xml.in:8 data/org.gnome.dfeet.desktop.in.in:5
+msgid "Debug D-Bus applications"
+msgstr "D-Bus alkalmazások hibakeresése"
+
+#: data/org.gnome.dfeet.appdata.xml.in:10
+msgid ""
+"A simple application for debugging the message bus system D-Bus. D-Feet can "
+"be used to inspect D-Bus interfaces of running programs and invoke methods "
+"on those interfaces."
+msgstr ""
+"Egy egyszerű alkalmazás a D-Bus üzenetbusz-rendszer hibakereséséhez. A D-"
+"Feet használható a futó programok D-Bus csatolóinak megfigyeléséhez és "
+"metódusok meghívásához azokon a csatolókon."
+
+#: data/org.gnome.dfeet.desktop.in.in:4
+msgid "D-Bus Debugger"
+msgstr "D-Bus hibakereső"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.dfeet.desktop.in.in:7
+msgid "debug;d-bus;dbus;dfeet;"
+msgstr "hibakeresés;d-bus;dbus;dfeet;"
+
+#: data/ui/addconnectiondialog.ui:7
+msgid "Add a Connection"
+msgstr "Kapcsolat hozzáadása"
+
+#: data/ui/addconnectiondialog.ui:25
+msgid "See http://dbus.freedesktop.org/doc/dbus-specification.html#addresses"
+msgstr ""
+"Lásd: http://dbus.freedesktop.org/doc/dbus-specification.html#addresses"
+
+#: data/ui/addconnectiondialog.ui:27 data/ui/introspection.ui:85
+msgid "Address:"
+msgstr "Cím:"
+
+#: data/ui/executedialog.ui:13
+msgid "Execute D-Bus Method"
+msgstr "D-Bus eljárás végrehajtása"
+
+#: data/ui/executedialog.ui:45
+msgid "_Execute"
+msgstr "_Végrehajtás"
+
+#: data/ui/executedialog.ui:97
+msgid "Method name:"
+msgstr "Eljárás neve:"
+
+#: data/ui/executedialog.ui:114
+msgid "Object Path:"
+msgstr "Objektum útvonala:"
+
+#: data/ui/executedialog.ui:131
+msgid "Interface:"
+msgstr "Csatoló:"
+
+#: data/ui/executedialog.ui:180
+msgid "Bus Name:"
+msgstr "Busz neve:"
+
+#: data/ui/executedialog.ui:218
+msgid "Method input"
+msgstr "Eljárás bemenet"
+
+#: data/ui/executedialog.ui:254
+msgid "Method output"
+msgstr "Eljárás kimenet"
+
+#: data/ui/executedialog.ui:295
+msgid "Pretty print"
+msgstr "Szép nyomtatás"
+
+#: data/ui/executedialog.ui:323
+msgid "Source"
+msgstr "Forrás"
+
+#: data/ui/executedialog.ui:349
+msgid "Method execution"
+msgstr "Eljárás végrehajtás"
+
+#: data/ui/executedialog.ui:365 data/ui/executedialog.ui:366
+msgid "Number of method executions"
+msgstr "Eljárás végrehajtásainak száma"
+
+#: data/ui/executedialog.ui:395
+msgid "Ø:"
+msgstr "Ø:"
+
+#: data/ui/executedialog.ui:408 data/ui/executedialog.ui:409
+msgid "Average method execution time in seconds"
+msgstr "Átlagos eljárás végrehajtási idő másodpercben"
+
+#: data/ui/executedialog.ui:421
+msgid "Min:"
+msgstr "Min:"
+
+#: data/ui/executedialog.ui:434 data/ui/executedialog.ui:435
+msgid "Minimal method execution time in seconds"
+msgstr "Legkisebb eljárás végrehajtási idő másodpercben"
+
+#: data/ui/executedialog.ui:447
+msgid "Max:"
+msgstr "Max:"
+
+#: data/ui/executedialog.ui:460 data/ui/executedialog.ui:461
+msgid "Maximal method execution time in seconds"
+msgstr "Legnagyobb eljárás végrehajtási idő másodpercben"
+
+#: data/ui/introspection.ui:21
+msgid "Unique name:"
+msgstr "Egyedi név:"
+
+#: data/ui/introspection.ui:38
+msgid "Name:"
+msgstr "Név:"
+
+#: data/ui/introspection.ui:124
+msgid "Introspecting..."
+msgstr "Önelemzés…"
+
+#: data/ui/introspection.ui:185
+msgid "Object path"
+msgstr "Objektum útvonala"
+
+#: data/ui/mainwindow.ui:7
+msgid "Connect to System Bus"
+msgstr "Csatlakozás a rendszerbuszhoz"
+
+#: data/ui/mainwindow.ui:11
+msgid "Connect to Session Bus"
+msgstr "Csatlakozás a munkamenetbuszhoz"
+
+#: data/ui/mainwindow.ui:15
+msgid "Connect to other Bus"
+msgstr "Csatlakozás más buszhoz"
+
+#: data/ui/mainwindow.ui:21
+msgid "Close Bus"
+msgstr "Busz bezárása"
+
+#: data/ui/mainwindow.ui:27
+msgid "About D-Feet"
+msgstr "A D-Feet névjegye"
+
+#: data/ui/mainwindow.ui:31
+msgid "Help"
+msgstr "Súgó"
+
+#: src/dfeet/application.py:35
+msgid "Show version number and exit"
+msgstr "Verziószám megjelenítése és kilépés"
+
+#: src/dfeet/application.py:37
+msgid "Open the specified bus address"
+msgstr "A megadott buszcím megnyitása"
+
+#: src/dfeet/application.py:43
+msgid "D-Feet version: {}"
+msgstr "D-Feet verzió: {}"
+
+#~ msgid "org.gnome.dfeet"
+#~ msgstr "org.gnome.dfeet"

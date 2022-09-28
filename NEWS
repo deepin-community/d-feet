@@ -1,0 +1,385 @@
+0.3.16 - May 7, 2021
+====================
+
+- Updated Danish translation (Alan Mortensen)
+- Update German translation (Stephan Woidowski)
+- Update Serbian translation (Мирослав Николић)
+- Merge branch 'fix-8' into 'master' (Thomas Bechtold)
+- Updated Czech translation (Marek Černocký)
+- Update Turkish translation (Emin Tufan Çetin)
+- Add Croatian translation (Goran Vidović)
+- Update Hungarian translation (Balázs Úr)
+- Update Friulian translation (Fabio Tomat)
+- Escape markup in property values (James Westman)
+- Update Dutch translation (Nathan Follens)
+- Updated Danish translation (Ask Hjorth Larsen)
+- add da to LINGUAS (Ask Hjorth Larsen)
+- Update Finnish translation (Jiri Grönroos)
+- ci: flatpak: remove meson-args variable (Jordan Petridis)
+- ci: push to the nightly repo (Jordan Petridis)
+- ci: remove deprecated jobs (Jordan Petridis)
+- Add Ukrainian translation (Yuri Chornoivan)
+- Updated Slovenian translation (Matej Urbančič)
+- Update Indonesian translation (Kukuh Syafaat)
+- introspection: Clear idle id when done with it (Ray Strode)
+- Merge branch 'wip/async-introspect' into 'master' (Thomas Bechtold)
+- Add Romanian translation (Florentina Mușat)
+- introspection: Load introspection data asynchronously (Ray Strode)
+- Updated Spanish translation (Daniel Mustieles)
+- Update Brazilian Portuguese translation (Rafael Fontenelle)
+- Update Swedish translation (Anders Jonsson)
+- Update Polish translation (Piotr Drąg)
+- Update Ukrainian translation (Yuri Chornoivan)
+- Merge branch 'cmdline' into 'master' (Thomas Bechtold)
+- Add Ukrainian translation (Yuri Chornoivan)
+- DFeetApp: add --address (Marc-André Lureau)
+- DFeetApp: add --version (Marc-André Lureau)
+- DFeetWindow: switch to the added bus watch (Marc-André Lureau)
+- DFeetWindow: factor out connect_to(address) (Marc-André Lureau)
+- meson: install to pure location (Marc-André Lureau)
+- README->README.md (Marc-André Lureau)
+- Merge branch 'pythonpath' into 'master' (Thomas Bechtold)
+- build: make the python installation used configurable (Chris Mayo)
+- build: use python path method (Chris Mayo)
+- Merge branch 'flatpak' into 'master' (Thomas Bechtold)
+- ci: Switch to flatpak ci initiative (Thomas Bechtold)
+- Add Basque translation (Asier Sarasua Garmendia)
+- Update Serbian translation (Марко Костић)
+- Add British English translation (Zander Brown)
+- Add British English translation (Zander Brown)
+- Post release version bump to 0.3.16 (Thomas Bechtold)
+
+0.3.15 - Aug 6, 2019
+====================
+
+- Restructure menus to follow GNOME 3.32 menu guidelines
+- New app icon as part of the GNOME 3.32 icon redesign
+- Add OARS content-rating data
+- Many translation updates
+- New Meson-based build system
+
+0.3.14 - Oct 24, 2018
+=====================
+- Added Slovenian translation (Matej Urbančič)
+- Correctly honour theme foreground colour (Will Thompson)
+- dbus_utils: stringify "h" (UNIX FD) (Will Thompson)
+- dbus_utils: simplify converting simple types (Will Thompson)
+- dbus_utils: simplify looking ahead 1 character (Will Thompson)
+- Update Brazilian Portuguese translation (Rafael Fontenelle)
+- Update Swedish translation (Anders Jonsson)
+- Update Indonesian translation (Kukuh Syafaat)
+- Updated Czech translation (Marek Černocký)
+- Update German translation (Mario Blättermann)
+- Cleanup doap file (Thomas Bechtold)
+- Update Polish translation (Piotr Drąg)
+- ci: build Flatpak in .app, not app (Will Thompson)
+- ci: run tests in Flatpak build (Will Thompson)
+- flatpak: install pycodestyle during build (Will Thompson)
+- ci: correctly build to use python3 (Will Thompson)
+- settings: fix regexp syntax, add a test (Will Thompson)
+- Enable GitLab CI (Will Thompson)
+- flatpak: build with Python 3 (Will Thompson)
+- settings: use r'' strings for regexps (Will Thompson)
+- Ignore W504 line break after binary operator (Will Thompson)
+- Fix a few unused variable/import warnings (Will Thompson)
+- Remove bare 'except:' clauses (Will Thompson)
+- Detect 'pycodestyle', the new name for 'pep8' (Will Thompson)
+- Run tests with same Python version as application (Will Thompson)
+- Fix coding style errors reported by make check (Will Thompson)
+- executedialog: include bus name (Will Thompson)
+- executedialog: allow selecting name/path/interface fields (Will Thompson)
+- Add Brazilian Portuguese translation (Rafael Fontenelle)
+- Update French translation (Charles Monzat)
+- Fix format string with python3 (Guido Günther)
+- flatpak: fix easy-install.pth write-ability (Christian Hergert)
+- Honor theme's foreground color (Guido Günther)
+- display statistics and match rules from the D-Bus Stats interface (Alban Crequy)
+- [flatpak] Try to make the “simple” buildsystem work. (Arnaud B)
+- [flatpak] The pygobject module stopped using Autotools. (Arnaud B)
+- flatpak file: Moved to Gitlab. (Arnaud B)
+- The module pygobject moved to Gitlab. (Arnaud B)
+- Remove unused DFeetWindow.package field (Will Thompson)
+- Set icon_name to org.gnome.dfeet (Will Thompson)
+- Do not use hyphen for the reverse-DNS names (Mathieu Bridon)
+- Update Polish translation (Piotr Drąg)
+- build: Install appstream metadata to non-deprecated location (Jeremy Bicha)
+- flatpak: Add a manifest to build d-feet master (Mathieu Bridon)
+- Rename the icons, appdata and desktop files (Mathieu Bridon)
+- Post release version bump to 0.3.14 (Thomas Bechtold)
+
+0.3.13 - Nov 24, 2017
+=====================
+- Use locale.textdomain otherwise gtkbuilder translations don't work (Sebastien Bacher)
+- .gitignore: Ignore generated localized help files (Simon McVittie)
+- build: Put various Autotools droppings in build-aux/ (Simon McVittie)
+- build: Stop using GNOME_COMPILE_WARNINGS (Simon McVittie)
+- build: Replace deprecated use of gnome-autogen.sh with recommended autogen.sh (Simon McVittie)
+- build: Put third-party macros in m4/ (Simon McVittie)
+- Make pep8 happy (Thomas Bechtold)
+- ExecuteMethodDialog: set_transient_for() (Will Thompson)
+- ExecuteMethodDialog: Pretty-print multiple results (Simon McVittie)
+- Fix PEP8 305 style error (Michael Biebl)
+- Added Norwegian bokmål translation. (Kjartan Maraas)
+- Added nb (Kjartan Maraas)
+- Updated Danish translation (Ask Hjorth Larsen)
+- Show values that have a logical False representation. (Benjamin Berg)
+- Post release version bump to 0.3.13 (Thomas Bechtold)
+
+0.3.12 - Jun 28, 2017
+=====================
+- Make pep8 happy (Thomas Bechtold)
+- Revert "Don't use Wnck to get app-icons under non-X11" (Debarshi Ray)
+- Assume Wnck is absent on non-X11 (Debarshi Ray)
+- Specify the Wnck version to silence a warning (Debarshi Ray)
+- Add Polish help translation (Piotr Drąg)
+- Add Friulian translation (Fabio Tomat)
+- Updated Danish translation (Alan Mortensen)
+- Updated Polish translation (Piotr Drąg)
+- Add Language headers to po files (Piotr Drąg)
+- Fix desktop file keywords translations (Kalev Lember)
+- Post release version bump to 0.3.12 (Thomas Bechtold)
+
+0.3.11 - Apr 23, 2016
+=====================
+- Don't use Wnck to get app-icons under non-X11 (Simon McVittie)
+- Updated Greek translation (Γιάννης Κουτσούκος)
+- Added Occitan translation (Cédric Valmary)
+- Updated Spanish Translation (Daniel Mustieles)
+- Add a missing tag to the AppData file (Richard Hughes)
+- Update the AppData file to spec version 0.7+ (Richard Hughes)
+- Added German doc translation (Mario Blättermann)
+- Updated Czech translation (Marek Černocký)
+- Add Swedish help translation (Anders Jonsson)
+- UI: make the stack animation slide-left-right (Ben Iofel)
+- Added Czech language (Marek Černocký)
+- Czech translation (Marek Černocký)
+- Ignore pep8 E402 error (Thomas Bechtold)
+- Updated Polish translation (Piotr Drąg)
+- Updated Portuguese translation (Pedro Albuquerque)
+- Post release version bump to 0.3.11 (Thomas Bechtold)
+
+0.3.10 - Jun 22, 2015
+=====================
+- Remove deprecated {x,y}pad properties (Thomas Bechtold)
+- Use correct license which is GPL-2.0 (Thomas Bechtold)
+- Set transient parent for GtkDialog (Thomas Bechtold)
+- Remove usage of "margin-{left,right}" #2 (Thomas Bechtold)
+- Use margin-{start,end} for bus box (Thomas Bechtold)
+- Remove usage of "margin-{left,right}" (Thomas Bechtold)
+- Allow connections to arbitrary buses (Thomas Bechtold)
+- Use open-menu-symbolic for gear icon (Thomas Bechtold)
+- Added Swedish translation (Anders Jonsson)
+- Use the path detected by autoconf instead of hard-coding /usr/bin/python (Ting-Wei Lan)
+- Added Bosnian translation (Samir Ribic)
+- Added Turkish translation (Muhammet Kara)
+- Added Portuguese translation (Tiago S)
+- Added Indonesian translation (Andika Triwidada)
+- Make pep8 happy (Marcos Marado)
+- Add missing appdata file to dist tarball (Thomas Bechtold)
+- Finnish translation update by Jiri Grönroos (Ville-Pekka Vainio)
+- Updated Hungarian translation (Balázs Úr)
+- Updated Danish translation (Klaus Rasmussen)
+- Added da to list of languages (Kenneth Nielsen)
+- Updated German translation (genodeftest)
+- Updated Slovenian translation (Matej Urbančič)
+- Updated Spanish translation (Daniel Mustieles)
+- Updated Serbian translation (Мирослав Николић)
+- Updated Brazilian Portuguese translation (Rafael Ferreira)
+- Updated Czech translation (Marek Černocký)
+- Updated Polish translation (Piotr Drąg)
+- Add more keywords to desktop file (Michael Catanzaro)
+- Fix desktop file keywords translation (Kalev Lember)
+- Update links to wiki homepage (Thomas Bechtold)
+- Post release vesion bump to 0.3.10 (Thomas Bechtold)
+
+0.3.9 - Jun 8, 2014
+===================
+- Wrap method signature in exec dialog (Thomas Bechtold)
+- Remove references to the obsoleted paned_buswatch (Zheng Li)
+- introspection.ui: Use symbolic icons for the reload button (Yosef Or Boczko)
+- Updated Greek translation (Tom Tryfonidis)
+- Updated Slovenian translation (Matej Urbančič)
+- Added French translation (Michael Scherer)
+- Updated Hungarian translation (Balázs Úr)
+- Updated Galician translations (Fran Diéguez)
+- Updated Brazilian Portuguese translation (Rafael Ferreira)
+- Updated Serbian translation (Мирослав Николић)
+- Updated Czech translation (Marek Černocký)
+- Updated Spanish translation (Daniel Mustieles)
+- Updated Polish translation (Piotr Drąg)
+- Updated POTFILES.in (Piotr Drąg)
+- Make AppData file translatable (Daniel Mustieles)
+- Update wiki page link (Thomas Bechtold)
+- Added Russian translation (Yuri Myasoedov)
+- build: Fix previous commit (Colin Walters)
+- data: Don't run update-desktop-database if DESTDIR is set (Colin Walters)
+- Finnish translation update (Jiri Grönroos)
+- Post release vesion bump to 0.3.9 (Thomas Bechtold)
+
+0.3.8 - Oct 19, 2013
+====================
+- Fix appdata distribution (Thomas Bechtold)
+- Add appdata file for gnome-software (Thomas Bechtold)
+- Update screenshot according to appdata guidelines (Thomas Bechtold)
+- Add screenshot for appdata (Thomas Bechtold)
+- introspection: fix showing unique-name for services with a well-known name (Aleksander Morgado)
+- Updated Serbian translation (Мирослав Николић)
+- Updated Slovenian translation (Matej Urbančič)
+- pep8 fixes (Thomas Bechtold)
+- Updated Brazilian Portuguese translation (Enrico Nicoletto)
+- Updated Czech translation (Marek Černocký)
+- Updated Spanish translation (Daniel Mustieles)
+- Updated Polish translation (Piotr Drąg)
+- Updated POTFILES.in (Piotr Drąg)
+- Change ' to " in .ui files (Piotr Drąg)
+- Added Latvian translation (Rūdolfs Mazurs)
+- Updated Brazilian Portuguese translation (Enrico Nicoletto)
+- build: update ignored files (Aleksander Morgado)
+- window: keep track of whether Session and System bus are already open (Aleksander Morgado)
+- window: allow closing currently visible bus (Aleksander Morgado)
+- build: don't use AM_GNU_GETTEXT (Aleksander Morgado)
+- introspection: use a 'reload' image button instead of a text button (Aleksander Morgado)
+- bus: add margins to the bus box (Aleksander Morgado)
+- bus: use a GtkSearchEntry instead of the filter box (Aleksander Morgado)
+- window: use a GtkStack instead of a GtkNotebook (Aleksander Morgado)
+- window: use a GtkHeaderBar and a gear menu (Aleksander Morgado)
+- application: load app menu from ui file (Aleksander Morgado)
+- Added Serbian translation (Мирослав Николић)
+- Fix desktop file keywords translation (Kalev Lember)
+- Post release vesion bump to 0.3.8 (Thomas Bechtold)
+
+0.3.7 - Sep 25, 2013
+====================
+- Added Galician translations (Fran Diéguez)
+- Updated Czech translation (Marek Černocký)
+- Updated Hungarian translation (Balázs Úr)
+- Updated Brazilian Portuguese translation (Enrico Nicoletto)
+- Updated Spanish translation (Daniel Mustieles)
+- Added Slovenian translation (Matej Urbančič)
+- Updated Polish translation (Piotr Drąg)
+- Show inactive bus names in italic (Thomas Bechtold)
+- Also install dfeet-icon-default-service.png (Thomas Bechtold)
+- Update POTFILES.in (Thomas Bechtold)
+- Also show activatable bus names (Thomas Bechtold)
+- Remove duplicate if-clause (Thomas Bechtold)
+- Fix Makefile for data/ui (Thomas Bechtold)
+- threads_init no longer needs to be called (Thomas Bechtold)
+- Bring back the application icons (Thomas Bechtold)
+- Use pformat to show method call results (Thomas Bechtold)
+- Use GtkListBox instead of a TreeView (Thomas Bechtold)
+- Initial Hungarian translation (Balázs Úr)
+- Added hu entry (Balázs Úr)
+- Added Polish translation (Piotr Drąg)
+- Update Chinese simplified translation (tuhaihe)
+- Added German translation (Christian Kirbach)
+- Added Greek translation (Dimitris Spingos)
+- post release vesion bump to 0.3.7 (Thomas Bechtold)
+
+0.3.6 - Jul 10, 2013
+====================
+- Replace live.gnome.org with wiki.gnome.org (Thomas Bechtold)
+- Added Brazilian Portuguese translation (Rafael Ferreira)
+- Add a flag to not run the testsuite (Jonh Wendell)
+- Fix markup string handling for tuple (Thomas Bechtold)
+- Update HACKING (Thomas Bechtold)
+
+0.3.5 - Jun 9, 2013
+===================
+- Fix Annotation handling (Thomas Bechtold)
+- Czech translation (Marek Černocký)
+- Added Czech language (Marek Černocký)
+- Added sl for Slovenian translation (Matej Urbančič)
+- Added Slovenian translation (Matej Urbančič)
+- Updated Spanish translation (Daniel Mustieles)
+- Added Spanish language lo LINGUAS (Daniel Mustieles)
+- Removed markup from Ui files. See https://live.gnome.org/GnomeGoals/RemoveMarkupInMessages (Daniel Mustieles)
+- Add empty (for now) LINGUAS file to satisfy Damned Lies (Piotr Drąg)
+- Remove unneeded context from strings (Piotr Drąg)
+- Updated POTFILES.in and POTFILES.skip (Piotr Drąg)
+- Use GTestDBus instead of Systembus and Sessionbus (Thomas Bechtold)
+- Use dbus_is_address() instead of dbus_is_supported_address() (Thomas Bechtold)
+- Require gobject introspection >= 0.9.6 (Thomas Bechtold)
+- GI imports: require Gtk 3.0 (Dominique Leuenberger)
+- Update HACKING (Thomas Bechtold)
+
+0.3.4 - May 22, 2013
+====================
+- Update README and HACKING (Thomas Bechtold)
+- Improve the HighContrast icon (Thomas Bechtold)
+- Add missing source (Thomas Bechtold)
+- Add scalable HighContrast icon (Thomas Bechtold)
+- Remove useless text and duplicate icons from scalable logo (Thomas Bechtold)
+- Don't fail if no systembus or sessionbus is available (Thomas Bechtold)
+- Add app menu (Thomas Bechtold)
+- Move window logic to own file and use GtkApplicationWindow (Thomas Bechtold)
+- Update .gitignore (Thomas Bechtold)
+- Add help files (Thomas Bechtold)
+- Check source for pep8 (Thomas Bechtold)
+- Fix unittests (Thomas Bechtold)
+- Use correct data dir (Thomas Bechtold)
+- Use autotools for d-feet (Thomas Bechtold)
+- Fix whitespaces (Thomas Bechtold)
+
+0.3.3 - Jan 12, 2013
+====================
+
+- Don't close dialog after method execution (Thomas Bechtold)
+- Add close-button to exception dialog (Thomas Bechtold)
+- Fix needed double click to close method execution dialog (Thomas Bechtold)
+- Update HACKING (Thomas Bechtold)
+
+0.3.2 - Jan 10, 2013
+====================
+
+- Fix input parameter handling for method execution dialog (Thomas Bechtold)
+- Update requirements in README (Thomas Bechtold)
+- Make d-feet ready for Python 3 (Thomas Bechtold)
+
+0.3.1 - Oct 23, 2012
+====================
+
+This is a new unstable release of DFeet.
+It's the first release based on gobject-introspection and gdbus.
+
+- Update setup.py (Thomas Bechtold)
+- Enlarge icon (Thomas Bechtold)
+- Fix icon handling (Thomas Bechtold)
+- Adjust UI (Thomas Bechtold)
+- Fix d-feet icon usage (Thomas Bechtold)
+- Merge branch 'pygi' (Thomas Bechtold)
+
+0.1.15 - Oct 15, 2012
+==
+- Add Thomas Bechtold as a project maintainer (Thomas Bechtold)
+- fixed tree model crash (Robert Ancell)
+- fix crash on empty selection (Robert Ancell)
+- removed gap between window titlebar and menubar (Chris Couzens)
+- import gtk early in a try except block so we catch if display is not set (John (J5) Palmieri)
+- Use XDG config dir (William Jon McCann)
+- update .gitignore (John (J5) Palmieri)
+- fix icon globbing in setup.py (John (J5) Palmieri)
+
+0.1.14 - Nov 14, 2011
+==
+- replace old icon with new hi-res icons (John (J5) Palmieri)
+- deal with None config values by making them empty strings (John (J5) Palmieri)
+- add dbus type wrappers global scope of methods executed by the exec dialog (John (J5) Palmieri)
+- remove lingering glade import (John (J5) Palmieri)
+- fix quoting and unquoting config lists (John (J5) Palmieri)
+- Add a reconnect button to the main panel that will allow to close and reconnect the dbus connection for the current tab if this tab address is not either Session Bus or System Bus. (Florent Viard)
+- Close the bus connection when we close a connection tab for the buses different than Session Bus and System Bus. + Fix a potentiel bug. (Florent Viard)
+- Quote and unquote list items to avoid splitting on comma litterals (John (J5) Palmieri)
+- D-Feet: Add a persistant history to the combobox in the "connect to other bus" dialog. (Florent Viard)
+- Pressing "Enter" in the add connection combobox activates the connect action (Florent Viard)
+
+0.1.12
+==
+- Add the ability to specify a bus on the command line using the --bus-address 
+  or -a switch (jdahlin)
+- fix up some UI bugs (jdahlin)
+- move project to gnome.org
+
+0.1.11
+===
+- Add a NEWS file
+- Fix up .desktop file 

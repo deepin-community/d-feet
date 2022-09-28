@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2013 Thomas Bechtold <thomasbechtold@jpberlin.de> -->
+<component type="desktop">
+  <id>org.gnome.dfeet.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>D-Feet</name>
+  <summary>Debug D-Bus applications</summary>
+  <description>
+    <p>
+      A simple application for debugging the message bus system D-Bus.
+      D-Feet can be used to inspect D-Bus interfaces of running programs and
+      invoke methods on those interfaces.
+    </p>
+  </description>
+  <screenshots>
+    <screenshot height="787" type="default" width="1400">
+      <image>https://git.gnome.org/browse/d-feet/plain/data/screenshots/d-feet-overview.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://wiki.gnome.org/Apps/DFeet</url>
+  <url type="bugtracker">https://bugzilla.gnome.org/enter_bug.cgi?product=d-feet</url>
+  <url type="donation">http://www.gnome.org/friends/</url>
+  <update_contact>thomasbechtold_at_jpberlin_de</update_contact>
+  <project_group>GNOME</project_group>
+  <translation type="gettext">d-feet</translation>
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="0.3.16" date="2021-05-07">
+      <description>
+        <p>Introspection data is now loaded asynchronously, which avoids D-Feet locking up when a complicated service like systemd is selected.</p>
+        <p>You can now pass ‘--address ADDRESS’ on the command line to connect to a bus by address.</p>
+        <p>Properties whose values contain the ‘&amp;’ character are now handled correctly.</p>
+        <p>New and updated translations for:</p>
+        <ul>
+          <li>Basque</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>English (United Kingdom)</li>
+          <li>Finnish</li>
+          <li>Friulian</li>
+          <li>German</li>
+          <li>Hungarian</li>
+          <li>Indonesian</li>
+          <li>Polish</li>
+          <li>Portuguese (Brazil)</li>
+          <li>Romanian</li>
+          <li>Serbian</li>
+          <li>Slovenian</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Ukrainian</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.3.15" date="2019-08-06">
+      <description>
+        <p>D-Feet 0.3.15 is here, with various cosmetic improvements:</p>
+        <ul>
+          <li>Restructure menus to follow GNOME 3.32 menu guidelines</li>
+          <li>New app icon as part of the GNOME 3.32 icon redesign</li>
+          <li>Add OARS content-rating data</li>
+          <li>Many translation updates</li>
+          <li>New Meson-based build system</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>

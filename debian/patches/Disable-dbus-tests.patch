@@ -1,0 +1,25 @@
+From: Thomas Bechtold <thomasbechtold@jpberlin.de>
+Date: Sat, 25 May 2013 08:35:01 +0200
+Subject: Disable dbus tests
+
+Disable tests which need systembus and sessionbus
+
+[smcv: Skip them instead of commenting them out]
+
+Forwarded: no
+---
+ src/tests/tests.py.in | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/tests/tests.py.in b/src/tests/tests.py.in
+index de40cf3..a2accc6 100755
+--- a/src/tests/tests.py.in
++++ b/src/tests/tests.py.in
+@@ -96,6 +96,7 @@ class AddressInfoTest(unittest.TestCase):
+     def tearDown(self):
+         self.bus.stop()
+ 
++    @unittest.skip("System bus is not available on Debian buildds")
+     def test_bus(self):
+         """introspect a name on the system bus"""
+         ai = AddressInfo(DATA_DIR, self.bus.get_bus_address(), None, "org.freedesktop.DBus")

@@ -1,0 +1,37 @@
+Source: d-feet
+Section: devel
+Priority: optional
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Uploaders: Laurent Bigonville <bigon@debian.org>,
+           Michael Biebl <biebl@debian.org>,
+           Simon McVittie <smcv@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-python3,
+               itstool,
+               libgirepository1.0-dev (>= 1.31.6),
+               libgtk-3-dev (>= 3.9.4),
+               meson (>= 0.50.0),
+               pycodestyle,
+               python3-gi (>= 3.3.91),
+               xauth <!nocheck>,
+               xvfb <!nocheck>
+Rules-Requires-Root: no
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/utopia-team/d-feet.git
+Vcs-Browser: https://salsa.debian.org/utopia-team/d-feet
+Homepage: https://wiki.gnome.org/Apps/DFeet
+
+Package: d-feet
+Architecture: all
+Depends: gir1.2-glib-2.0,
+         gir1.2-gtk-3.0 (>= 3.6),
+         python3-gi (>= 3.3.91),
+         ${misc:Depends},
+         ${python3:Depends},
+         ${shlibs:Depends},
+Description: D-Bus object browser, viewer and debugger
+ d-feet is a D-Bus debugger that allow you to:
+  * View names on the session and system bus
+  * View exported objects, interfaces, methods and signals
+  * View the full command line of services on the bus
+  * Execute methods with parameters on the bus and see their return values

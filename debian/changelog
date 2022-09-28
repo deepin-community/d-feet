@@ -1,0 +1,407 @@
+d-feet (0.3.16-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Build-Depend on dh-sequence-python3
+  * Bump debhelper-compat to 13
+  * debian/control: Clean up Build-Depends from switch to meson
+  * Simplify debian/rules and drop unneeded debian/d-feet.install
+
+ -- Jeremy Bicha <jbicha@debian.org>  Tue, 24 Aug 2021 21:00:15 -0400
+
+d-feet (0.3.15-3) unstable; urgency=medium
+
+  * d/gbp.conf: Set development branch to debian/latest
+  * Standards-Version: 4.5.1 (no changes required)
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 20 Dec 2020 15:59:06 +0000
+
+d-feet (0.3.15-2) unstable; urgency=medium
+
+  * Standards-Version: 4.5.0 (no changes required)
+  * Build-depend on pycodestyle instead of the transitional pep8 package,
+    which was recently removed. The upstream build system already
+    prefers to use the pycodestyle name for the program. (Closes: #949938)
+  * Normalize order of dependencies (wrap-and-sort -abt)
+  * Eliminate trailing whitespace from d/copyright (wrap-and-sort -abt)
+  * Normalize order of d/d-feet.install (wrap-and-sort -abt)
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Name.
+  * Set upstream metadata fields: Repository, Repository-Browse.
+
+ -- Simon McVittie <smcv@debian.org>  Mon, 27 Jan 2020 23:05:14 +0000
+
+d-feet (0.3.15-1) unstable; urgency=medium
+
+  * New upstream release
+    - Build with Meson
+    - Refresh patches
+  * d/salsa-ci.yml: Request standard CI on salsa.debian.org
+  * d/rules: Use dh_auto_test, instead of using $(MAKE) check directly
+  * d/rules: Don't run xvfb-run if DEB_BUILD_OPTIONS=nocheck
+  * d/control, d/changelog: Remove trailing whitespace
+  * d/control: Don't build-depend on xauth, xvfb if not running tests
+  * Use debhelper-compat 12
+  * Standards-Version: 4.4.0 (no changes required)
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 09 Aug 2019 12:49:44 +0100
+
+d-feet (0.3.14-1) unstable; urgency=medium
+
+  [ Simon McVittie ]
+  * Remove X-Python3-Version: >= 3.2. There is no supported Debian
+    release with a python3 version that old.
+  * Standards-Version: 4.2.1 (no changes required)
+
+  [ Michael Biebl ]
+  * New upstream version 0.3.14
+  * Rebase patches
+  * Stop fixing install location of AppData files
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 28 Oct 2018 19:37:52 +0100
+
+d-feet (0.3.13-3) unstable; urgency=medium
+
+  * d/control: Switch Vcs-* for migration to salsa.debian.org
+  * Standards-Version: 4.1.4 (no changes required)
+
+ -- Simon McVittie <smcv@debian.org>  Fri, 27 Apr 2018 12:52:19 +0100
+
+d-feet (0.3.13-2) unstable; urgency=medium
+
+  * Remove Thomas Bechtold from Uploaders (Closes: #892670)
+  * d/gbp.conf: Configure for DEP-14 branch names
+  * Standards-Version: 4.1.3 (no changes required)
+
+ -- Simon McVittie <smcv@debian.org>  Mon, 12 Mar 2018 08:31:30 +0000
+
+d-feet (0.3.13-1) unstable; urgency=medium
+
+  * New upstream version 0.3.13
+  * Rebase patches
+  * Drop Hard-code-python-interpreter-path.patch.
+    This is no longer necessary as we now set PYTHON to a full path via
+    debian/rules.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 26 Nov 2017 15:06:12 +0100
+
+d-feet (0.3.12-2) unstable; urgency=medium
+
+  * Set Priority to optional
+  * Standards-Version: 4.1.1 (no further changes)
+  * Set Rules-Requires-Root to no
+  * Mark patches with their forwarding status
+  * d/p/build-Put-third-party-macros-in-m4.patch,
+    d/p/build-Replace-deprecated-use-of-gnome-autogen.sh-with-rec.patch,
+    d/p/build-Stop-using-GNOME_COMPILE_WARNINGS.patch:
+    Add patches to stop using gnome-common
+    - d/control: Stop depending on gnome-common (Closes: #829972)
+    - d/control: Depend on intltool so we can re-intltoolize, instead of
+      relying on upstream's aclocal.m4
+    - d/rules: Run autogen.sh instead of autoreconf, to get the intltool
+      macros
+  * d/watch: Use https URL, version 4, @PACKAGE@, @ANY_VERSION@,
+    @ARCHIVE_EXT@
+  * Install to debian/tmp, and use d/d-feet.install to move AppStream
+    XML to /usr/share/metainfo
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 04 Nov 2017 16:12:17 +0000
+
+d-feet (0.3.12-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/patches/: Instead of patching minor formatting errors, ignore
+    the result of the PEP8 check. (Closes: #866556)
+  * d/p/ExecuteMethodDialog-Pretty-print-multiple-results.patch:
+    Add patch to display multiple results from one method call correctly
+    (upstream bug GNOME#784387)
+  * d/p/Show-values-that-have-a-logical-False-representation.patch:
+    Add patch from upstream Bugzilla to display zero/empty/false
+    property values (upstream bug GNOME#783006)
+  * Standards-Version: 4.0.0 (no further changes)
+  * Upgrade to debhelper 10 compatibility level
+    - Do not explicitly run dh-autoreconf, it is now the default
+  * Add myself to Uploaders
+
+ -- Simon McVittie <smcv@debian.org>  Sat, 08 Jul 2017 21:27:29 +0100
+
+d-feet (0.3.11-3) unstable; urgency=medium
+
+  * Fix PEP8 305 style error. (Closes: #844533)
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 01 Dec 2016 18:33:50 +0100
+
+d-feet (0.3.11-2) unstable; urgency=medium
+
+  * Switch to python3
+  * debian/patches/fix_tests_python3.patch: Run the tests with python3
+  * debian/control: Drop direct dependency to hicolor-icon-theme
+  * debian/rules: Enable verbose tests
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 28 Jun 2016 13:48:29 +0200
+
+d-feet (0.3.11-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop patches which have been applied upstream:
+    - debian/patches/Don-t-use-Wnck-to-get-app-icons-under-non-X11.patch
+    - debian/patches/Ignore-pep8-E402-error.patch
+  * Bump debhelper compatibility level to 9.
+  * Convert from cdbs to dh.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 27 Apr 2016 01:37:40 +0200
+
+d-feet (0.3.10-2) unstable; urgency=medium
+
+  * Team upload
+  * Add patch to make d-feet work in Wayland (Closes: #821294)
+  * Standards-Version: 3.9.8 (no changes)
+  * Use https for Vcs-Git
+
+ -- Simon McVittie <smcv@debian.org>  Sun, 17 Apr 2016 14:44:42 +0100
+
+d-feet (0.3.10-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop patches which have been applied upstream:
+    - debian/patches/01-add-missing-appdata-in-file.patch
+    - debian/patches/02-make-pep8-happy.patch
+  * Use unnumbered patches to avoid unnecessary noise on rebase.
+  * Hard code the python binary path in /usr/bin/d-feet. CDBS sets PYTHON to
+    the binary name, not the full path which breaks the shebang.
+
+ -- Michael Biebl <biebl@debian.org>  Wed, 07 Oct 2015 20:38:24 +0200
+
+d-feet (0.3.9-2) unstable; urgency=medium
+
+  * Team upload
+  * Make PEP8 happy, again. Patch from upstream git. (Closes: #797398)
+  * Canonicalize Vcs-Git
+  * Use https and cgit for Vcs-Browser
+  * Standards-Version: 3.9.6 (no changes)
+  * Add dh-python to Build-Depends
+
+ -- Simon McVittie <smcv@debian.org>  Tue, 29 Sep 2015 11:30:40 +0100
+
+d-feet (0.3.9-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add d-feet.appdata.xml.in which is missing in the upstream tarball. This
+    file is required during autoreconf.
+  * Make PEP8 happy. Patch taken from upstream bug tracker. (Closes: #759223)
+  * Update Homepage: URL. (Closes: #745752)
+  * Bump Standards-Version to 3.9.5. No further changes.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 12 Sep 2014 17:37:27 +0200
+
+d-feet (0.3.8-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    - Use debian address in Uploaders field.
+    - Build-Depends on libgtk-3-dev (>= 3.9.4) according to configure.ac.
+  * debian/patches:
+    - 02-no-gettext.patch: Removed. Applied upstream.
+    - 03-disable-dbus-tests.patch: Refreshed.
+
+ -- Thomas Bechtold <toabctl@debian.org>  Fri, 07 Mar 2014 17:39:04 +0100
+
+d-feet (0.3.6-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Wed, 10 Jul 2013 11:45:08 +0200
+
+d-feet (0.3.5-1) unstable; urgency=low
+
+  * New upstream release.
+  * Refresh debian/patches/03-disable-dbus-tests.patch.
+  * debian/control: Add gobject-introspection and libgirepository1.0-dev
+    to Build-Depends according to configure.ac.
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Mon, 10 Jun 2013 10:29:44 +0200
+
+d-feet (0.3.4-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/rules:
+    - Remove python-distutils.mk and add python-autotools.mk and
+      autoreconf.mk according to build-system switch.
+    - Execute testsuite during build.
+  * debian/control:
+    - Remove Build-Depends python-setuptools according to build-system
+      switch.
+    - Bump X-Python-version to >= 2.7 according to configure.ac.
+    - Build-Depends on dh-autoreconf and gnome-common according to
+      build-system switch.
+    - Build-Depends on pep8 according to configure.ac.
+    - Build-Depends on libgtk-3-dev (>= 3.6) according to configure.ac.
+    - Build-Depends on yelp-tools according to configure.ac.
+    - Build-Depends on python-gi (>= 3.3.91), gir1.2-gtk-3.0 (>= 3.6), xvfb
+      and xauth to be able to execute the test suite.
+  * debian/patches:
+    - Add 03-disable-dbus-tests.patch: disable tests which need systembus
+      and sessionbus.
+    - Add 02-no-gettext.patch: remove gettext macros, otherwise autoreconf
+      fails due to incompatibilities with intltool.
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Sat, 25 May 2013 08:35:01 +0200
+
+d-feet (0.3.3-2) unstable; urgency=low
+
+  * Release to unstable
+
+ -- Thomas Bechtold <thomasbechtold@jpberlin.de>  Wed, 08 May 2013 18:34:38 +0200
+
+d-feet (0.3.3-1) experimental; urgency=low
+
+  [ Thomas Bechtold ]
+  * New upstream release
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 14 Jan 2013 14:16:09 +0100
+
+d-feet (0.3.2-1) experimental; urgency=low
+
+  [ Thomas Bechtold ]
+  * New upstream release
+  * debian/control: Bump Standards-Version to 3.9.4.
+
+ -- Michael Biebl <biebl@debian.org>  Fri, 11 Jan 2013 22:14:05 +0100
+
+d-feet (0.3.1-1) experimental; urgency=low
+
+  [ Thomas Bechtold ]
+  * New upstream release
+  * debian/patches:
+    - 10_tree_model_crash.patch removed. Applied upstream.
+    - 11_selection_crash.patch removed. Applied upstream.
+    - 20_menubar_gap.patch removed. Applied upstream.
+  * debian/control:
+    - Add Thomas Bechtold to Uploaders
+    - Bump Standards-Version to 3.9.3.
+    - Adjust dependencies for Gtk+3.
+    - Remove python-wnck from Recommends
+
+ -- Michael Biebl <biebl@debian.org>  Thu, 22 Nov 2012 18:37:35 +0100
+
+d-feet (0.1.14-2) UNRELEASED; urgency=low
+
+  * debian/control:
+    - Update Vcs-* fields to new URL
+    - Bump Build-dependencies for dh_python2 support
+  * debian/rules:
+    - Move to dh_python2 support
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 23 Nov 2011 13:18:22 +0100
+
+d-feet (0.1.14-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/watch: Track .xz tarballs.
+  * Bump debhelper compatibility level to 8.
+  * Bump Standards-Version to 3.9.2. No further changes.
+  * debian/control:
+    - Remove article from description synopsis.
+    - Drop Depends on python-glade2.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 14 Nov 2011 22:35:45 +0100
+
+d-feet (0.1.12-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Michael Biebl <biebl@debian.org>  Sun, 06 Feb 2011 14:30:03 +0100
+
+d-feet (0.1.12-1) experimental; urgency=low
+
+  * New upstream release.
+  * Refresh debian/patches/20_menubar_gap.patch.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 29 Nov 2010 02:07:42 +0100
+
+d-feet (0.1.10-4) unstable; urgency=low
+
+  [ Laurent Bigonville ]
+  * debian/control: Use viewsvn instead of wsvn for Vcs-Browser
+
+  [ Michael Biebl ]
+  * debian/control
+    - Add myself to Uploaders.
+    - Update Vcs-* fields: Move packaging from svn to git.
+    - Bump Standards-Version to 3.9.1. No further changes.
+    - Update Homepage URL.
+  * Update watch file, package is now hosted on gnome.org.
+
+ -- Michael Biebl <biebl@debian.org>  Mon, 29 Nov 2010 01:29:19 +0100
+
+d-feet (0.1.10-3) unstable; urgency=low
+
+  * Thanks to Robert Ancell <robert.ancell@canonical.com>
+    for these patches
+  * debian/patches/10_tree_model_crash.patch:
+    - Fix crash in tree model API usage
+  * debian/patches/11_selection_crash.patch:
+    - Fix crash deselecting tree view (Closes: #539759)
+  * debian/patches/20_menubar_gap.patch:
+    - Fix spacing around the menubar
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 20 Apr 2010 23:51:32 +0200
+
+d-feet (0.1.10-2) unstable; urgency=low
+
+  * Bump Standards-Version (no further change)
+  * Build-depend on python (>= 2.5) instead of python2.5.
+  * Remove pyversions and pycompat files and use XS-Python-Version instead
+  * Use new source package version '3.0 (quilt)'
+  * debian/d-feet.1: Update my email address
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 20 Feb 2010 12:46:20 +0100
+
+d-feet (0.1.10-1.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Add missing dependency on hicolor-icon-theme (Closes: #546764)
+
+ -- Stefano Zacchiroli <zack@debian.org>  Mon, 08 Feb 2010 13:30:09 +0100
+
+d-feet (0.1.10-1) unstable; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    - Drop XS-Dm-Upload-Allowed: yes
+    - Bump Standards-Version to 3.8.2 (no further changes)
+    - Add python-setuptools as build-dep
+    - Recommends python-wnck instead of python-gnome2-desktop
+  * debian/watch: Fix URL
+  * Bump debhelper compatibility to 7
+  * debian/rules: Drop dh_desktop call, not needed anymore
+  * Use correct pysupport policy
+  * Update copyright file
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 11 Jul 2009 18:32:37 +0200
+
+d-feet (0.1.8-3) unstable; urgency=low
+
+  * debian/control:
+    - Fix Homepage URL (Closes: #506559)
+    - Drop python-gnome2-desktop to Recommends (Closes: #507442)
+    - Change description to something more meaningful (Closes: #470701)
+  * debian/rules: Remove rmdir rules, not needed anymore
+
+ -- Laurent Bigonville <bigon@debian.org>  Mon, 16 Feb 2009 09:59:53 +0100
+
+d-feet (0.1.8-2) unstable; urgency=low
+
+  * debian/control:
+    - Bump minimal version for debhelper to please lintian
+    - Move python2.5 to Build-Depends to please lintian
+    - Bump Standards-Version to 3.8.0
+    - Use my debian.org address in Uploaders
+  * debian/d-feet.1: add manpage for d-feet executable
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 11 Sep 2008 22:33:01 +0200
+
+d-feet (0.1.8-1) unstable; urgency=low
+
+  * Initial release. (Closes: #455365)
+
+ -- Laurent Bigonville <bigon@bigon.be>  Sun, 09 Dec 2007 22:17:38 +0100

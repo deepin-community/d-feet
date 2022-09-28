@@ -1,0 +1,209 @@
+# Spanish translation for d-feet.
+# Copyright (C) 2013 d-feet's COPYRIGHT HOLDER
+# This file is distributed under the same license as the d-feet package.
+# Daniel Mustieles <daniel.mustieles@gmail.com>, 2013-2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: d-feet master\n"
+"Report-Msgid-Bugs-To: https://gitlab.gnome.org/GNOME/d-feet/issues\n"
+"POT-Creation-Date: 2020-04-15 09:53+0000\n"
+"PO-Revision-Date: 2020-04-30 11:33+0200\n"
+"Last-Translator: Daniel Mustieles <daniel.mustieles@gmail.com>\n"
+"Language-Team: es <gnome-es-list@gnome.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#: data/org.gnome.dfeet.appdata.xml.in:7 data/org.gnome.dfeet.desktop.in.in:3
+#: src/dfeet/application.py:90
+msgid "D-Feet"
+msgstr "D-Feet"
+
+#: data/org.gnome.dfeet.appdata.xml.in:8 data/org.gnome.dfeet.desktop.in.in:5
+msgid "Debug D-Bus applications"
+msgstr "Depurar aplicaciones de D-Bus"
+
+#: data/org.gnome.dfeet.appdata.xml.in:10
+msgid ""
+"A simple application for debugging the message bus system D-Bus. D-Feet can "
+"be used to inspect D-Bus interfaces of running programs and invoke methods "
+"on those interfaces."
+msgstr ""
+"Una sencilla aplicación para depurar el bus de mensajes del sistema D-Bus. D-"
+"Feet se puede usar para inspeccionar interfaces D-Bus de programas en "
+"ejecución y para invocar métodos en esas interfaces."
+
+#: data/org.gnome.dfeet.desktop.in.in:4
+msgid "D-Bus Debugger"
+msgstr "Depurador de D-Bus"
+
+#. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
+#: data/org.gnome.dfeet.desktop.in.in:7
+msgid "debug;d-bus;dbus;dfeet;"
+msgstr "depurar;depurador;d-bus;dfeet;"
+
+#: data/ui/addconnectiondialog.ui:7
+msgid "Add a Connection"
+msgstr "Añadir una conexión"
+
+#: data/ui/addconnectiondialog.ui:25
+msgid "See http://dbus.freedesktop.org/doc/dbus-specification.html#addresses"
+msgstr ""
+"Consulte http://dbus.freedesktop.org/doc/dbus-specification.html#addresses"
+
+#: data/ui/addconnectiondialog.ui:27 data/ui/introspection.ui:85
+msgid "Address:"
+msgstr "Dirección:"
+
+#: data/ui/executedialog.ui:13
+msgid "Execute D-Bus Method"
+msgstr "Ejecutar el método de D-Bus"
+
+#: data/ui/executedialog.ui:45
+msgid "_Execute"
+msgstr "_Ejecutar"
+
+#: data/ui/executedialog.ui:97
+msgid "Method name:"
+msgstr "Nombre del método:"
+
+#: data/ui/executedialog.ui:114
+msgid "Object Path:"
+msgstr "Ruta del objeto:"
+
+#: data/ui/executedialog.ui:131
+msgid "Interface:"
+msgstr "Interfaz:"
+
+#: data/ui/executedialog.ui:180
+msgid "Bus Name:"
+msgstr "Nombre del bus:"
+
+#: data/ui/executedialog.ui:218
+msgid "Method input"
+msgstr "Entrada del método"
+
+#: data/ui/executedialog.ui:254
+msgid "Method output"
+msgstr "Salida del método"
+
+#: data/ui/executedialog.ui:295
+msgid "Pretty print"
+msgstr "Impresión bonita"
+
+#: data/ui/executedialog.ui:323
+msgid "Source"
+msgstr "Fuente"
+
+#: data/ui/executedialog.ui:349
+msgid "Method execution"
+msgstr "Ejecución del método"
+
+#: data/ui/executedialog.ui:365 data/ui/executedialog.ui:366
+msgid "Number of method executions"
+msgstr "Número de ejecuciones del método"
+
+#: data/ui/executedialog.ui:395
+msgid "Ø:"
+msgstr "Ø:"
+
+#: data/ui/executedialog.ui:408 data/ui/executedialog.ui:409
+msgid "Average method execution time in seconds"
+msgstr "Tiempo medio de ejecución, en segundos"
+
+#: data/ui/executedialog.ui:421
+msgid "Min:"
+msgstr "Mín:"
+
+#: data/ui/executedialog.ui:434 data/ui/executedialog.ui:435
+msgid "Minimal method execution time in seconds"
+msgstr "Tiempo mínimo de ejecución, en segundos"
+
+#: data/ui/executedialog.ui:447
+msgid "Max:"
+msgstr "Máx:"
+
+#: data/ui/executedialog.ui:460 data/ui/executedialog.ui:461
+msgid "Maximal method execution time in seconds"
+msgstr "Tiempo máximo de ejecución, en segundos"
+
+#: data/ui/introspection.ui:21
+msgid "Unique name:"
+msgstr "Nombre único:"
+
+#: data/ui/introspection.ui:38
+msgid "Name:"
+msgstr "Nombre:"
+
+#: data/ui/introspection.ui:124
+msgid "Introspecting..."
+msgstr "Introspección…"
+
+#: data/ui/introspection.ui:185
+msgid "Object path"
+msgstr "Ruta del objeto"
+
+#: data/ui/mainwindow.ui:7
+msgid "Connect to System Bus"
+msgstr "Conectar al bus del sistema"
+
+#: data/ui/mainwindow.ui:11
+msgid "Connect to Session Bus"
+msgstr "Conectar a bus de sesión"
+
+#: data/ui/mainwindow.ui:15
+msgid "Connect to other Bus"
+msgstr "Conectar a otro bus"
+
+#: data/ui/mainwindow.ui:21
+msgid "Close Bus"
+msgstr "Cerrar bus"
+
+#: data/ui/mainwindow.ui:27
+msgid "About D-Feet"
+msgstr "Acerca de D-Feet"
+
+#: data/ui/mainwindow.ui:31
+msgid "Help"
+msgstr "Ayuda"
+
+#: src/dfeet/application.py:35
+msgid "Show version number and exit"
+msgstr "Mostrar número de versión y salir"
+
+#: src/dfeet/application.py:37
+msgid "Open the specified bus address"
+msgstr "Abrir la dirección de bus especificada"
+
+#: src/dfeet/application.py:43
+msgid "D-Feet version: {}"
+msgstr "Versión de D-Feet: {}"
+
+#~ msgid "org.gnome.dfeet"
+#~ msgstr "org.gnome.dfeet"
+
+#~ msgid "About"
+#~ msgstr "Acerca de"
+
+#~ msgid "Quit"
+#~ msgstr "Salir"
+
+#~| msgid "unique bus name"
+#~ msgid "Filter busnames:"
+#~ msgstr "Filtrar nombres de bus:"
+
+#~ msgid "File"
+#~ msgstr "Archivo"
+
+#~ msgid "Filter:"
+#~ msgstr "Filtro:"
+
+#~ msgid "Command line:"
+#~ msgstr "Línea de comandos:"
+
+#~ msgid "Process ID:"
+#~ msgstr "ID del proceso:"
