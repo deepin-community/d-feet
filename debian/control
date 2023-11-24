@@ -8,15 +8,15 @@ Uploaders: Laurent Bigonville <bigon@debian.org>,
 Build-Depends: debhelper-compat (= 13),
                dh-sequence-python3,
                itstool,
-               libgirepository1.0-dev (>= 1.31.6),
-               libgtk-3-dev (>= 3.9.4),
+               libgirepository1.0-dev,
+               libgtk-3-dev,
                meson (>= 0.50.0),
                pycodestyle,
-               python3-gi (>= 3.3.91),
+               python3-gi,
                xauth <!nocheck>,
                xvfb <!nocheck>
 Rules-Requires-Root: no
-Standards-Version: 4.5.1
+Standards-Version: 4.6.2
 Vcs-Git: https://salsa.debian.org/utopia-team/d-feet.git
 Vcs-Browser: https://salsa.debian.org/utopia-team/d-feet
 Homepage: https://wiki.gnome.org/Apps/DFeet
@@ -24,8 +24,8 @@ Homepage: https://wiki.gnome.org/Apps/DFeet
 Package: d-feet
 Architecture: all
 Depends: gir1.2-glib-2.0,
-         gir1.2-gtk-3.0 (>= 3.6),
-         python3-gi (>= 3.3.91),
+         gir1.2-gtk-3.0,
+         python3-gi,
          ${misc:Depends},
          ${python3:Depends},
          ${shlibs:Depends},

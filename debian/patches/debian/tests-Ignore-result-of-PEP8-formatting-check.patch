@@ -12,7 +12,7 @@ Forwarded: no, Debian-specific
  1 file changed, 2 insertions(+)
 
 diff --git a/src/tests/meson.build b/src/tests/meson.build
-index b185953..53b1993 100644
+index 19f819b..8614f92 100644
 --- a/src/tests/meson.build
 +++ b/src/tests/meson.build
 @@ -18,6 +18,7 @@ test(
